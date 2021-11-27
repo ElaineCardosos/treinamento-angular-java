@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'extrato', component: ExtratoComponent},
   {path: 'saque', component: SaqueComponent},
   {path: 'deposito', component: DepositoComponent}
+  
 ];
 
 @NgModule({
