@@ -2,10 +2,10 @@
 <div>
   {{ exibindo }}
   <h1 class="text-primary">Exibindo</h1>
-  <h1 class="text-danger">Não exibindo</h1>
-  <div class="alert alert-danger" role="alert">
-    {{ exibirTextoAlerta }}
+  <h1 class="text-danger"> Não exibindo</h1>
+  <div *ngIf="exibirTextoalerta" class="alert alert-primary" role="alert">
+    {{ exibirTextoalerta }}
   </div>
-
 </div>
+
 

@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CheckboxControlValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-label-input',
@@ -9,12 +8,16 @@ import { CheckboxControlValueAccessor } from '@angular/forms';
 export class LabelInputComponent implements OnInit {
 
   @Input()
-  Label: string ='';
-  
-  constructor() { }
+  label: string = '';
 
+  @Input()
+  type = 'text' ||  'email' || 'password';
+
+
+  constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+

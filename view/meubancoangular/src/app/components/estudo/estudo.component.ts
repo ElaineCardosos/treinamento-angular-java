@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { __importDefault } from 'tslib';
 
 @Component({
   selector: 'app-estudo',
@@ -12,7 +11,8 @@ export class EstudoComponent implements OnInit {
   exibindo: boolean = false;
 
   @Input()
-  exibirTextoAlerta: string='';
+  exibirTextoalerta: string = '';
+
 
   constructor() { }
 

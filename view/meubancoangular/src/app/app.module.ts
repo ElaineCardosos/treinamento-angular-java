@@ -13,7 +13,8 @@ import { EstudoComponent } from './components/estudo/estudo.component';
 import { LabelInputComponent } from './components/label-input/label-input.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { ButtonComponent } from './components/button/button.component';
-import { ClientesComponent } from './components/clientes/clientes.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,16 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     LabelInputComponent,
     CheckboxComponent,
     ButtonComponent,
-    ClientesComponent,
-   
+    ClientesComponent
+
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
