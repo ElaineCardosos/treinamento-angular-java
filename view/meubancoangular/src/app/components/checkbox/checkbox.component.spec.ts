@@ -23,4 +23,3 @@ describe('CheckboxComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

@@ -9,12 +9,15 @@ import { ExtratoComponent } from './pages/extrato/extrato.component';
 import { SaqueComponent } from './pages/saque/saque.component';
 import { DepositoComponent } from './pages/deposito/deposito.component';
 import { HomeComponent } from './pages/home/home.component';
-import { EstudoComponent } from './components/estudo/estudo.component';
 import { LabelInputComponent } from './components/label-input/label-input.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientesComponent } from './pages/clientes/clientes.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContasComponent } from './pages/contas/contas.component';
+import { CadastarEditarClienteComponent } from './pages/clientes/cadastar-editar-cliente/cadastar-editar-cliente.component';
+
 
 @NgModule({
   declarations: [
@@ -25,20 +28,20 @@ import { ClientesComponent } from './pages/clientes/clientes.component';
     SaqueComponent,
     DepositoComponent,
     HomeComponent,
-    EstudoComponent,
     LabelInputComponent,
     CheckboxComponent,
     ButtonComponent,
-    ClientesComponent
-
-
+    ClientesComponent,
+    ContasComponent,
+    CadastarEditarClienteComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
